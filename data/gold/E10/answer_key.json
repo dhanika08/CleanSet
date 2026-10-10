@@ -1,0 +1,17 @@
+{
+  "case_id": "E10",
+  "group": "single_error",
+  "expected_verdict": "discrepant",
+  "expected_findings": [
+    {
+      "rule_id": "CHK-01",
+      "field": "presentation.presentation_date",
+      "related_fields": [
+        "lc.31D_expiry"
+      ],
+      "description": "Documents were presented on 18 Nov 2026, after the credit expired on 16 Nov 2026."
+    }
+  ],
+  "expected_accepted": [],
+  "note": "Credit had expired at presentation."
+}

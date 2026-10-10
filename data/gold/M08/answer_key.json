@@ -1,0 +1,34 @@
+{
+  "case_id": "M08",
+  "group": "multi_error",
+  "expected_verdict": "discrepant",
+  "expected_findings": [
+    {
+      "rule_id": "CHK-08",
+      "field": "bill_of_lading.port_of_loading",
+      "related_fields": [
+        "lc.44E_port_of_loading"
+      ],
+      "description": "Bill of lading shows port of loading Chennai, but the credit requires Tuticorin."
+    },
+    {
+      "rule_id": "CHK-09",
+      "field": "bill_of_lading.port_of_discharge",
+      "related_fields": [
+        "lc.44F_port_of_discharge"
+      ],
+      "description": "Bill of lading shows port of discharge Rotterdam, but the credit requires Hamburg."
+    },
+    {
+      "rule_id": "CHK-03",
+      "field": "presentation.presentation_date",
+      "related_fields": [
+        "bill_of_lading.shipped_on_board_date",
+        "lc.48_presentation_period_days"
+      ],
+      "description": "Documents were presented 22 days after shipment; the credit allows 21 days."
+    }
+  ],
+  "expected_accepted": [],
+  "note": "Combination of 3 problems."
+}

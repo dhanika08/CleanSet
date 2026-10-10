@@ -1,0 +1,25 @@
+{
+  "case_id": "M03",
+  "group": "multi_error",
+  "expected_verdict": "discrepant",
+  "expected_findings": [
+    {
+      "rule_id": "CHK-14",
+      "field": "bill_of_lading.gross_weight_kg",
+      "related_fields": [
+        "packing_list.gross_weight_kg"
+      ],
+      "description": "Gross weight conflicts: packing list 1,180.0 kg, bill of lading 1,108.0 kg."
+    },
+    {
+      "rule_id": "CHK-06",
+      "field": "invoice.made_out_to",
+      "related_fields": [
+        "lc.50_applicant"
+      ],
+      "description": "Invoice is made out to Nordic Trading GmbH, but the applicant in the credit is Nordic Textiles GmbH."
+    }
+  ],
+  "expected_accepted": [],
+  "note": "Combination of 2 problems."
+}

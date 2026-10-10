@@ -1,0 +1,17 @@
+{
+  "case_id": "E07",
+  "group": "single_error",
+  "expected_verdict": "discrepant",
+  "expected_findings": [
+    {
+      "rule_id": "CHK-12",
+      "field": "insurance.effective_from",
+      "related_fields": [
+        "bill_of_lading.shipped_on_board_date"
+      ],
+      "description": "Insurance cover starts after the goods were shipped."
+    }
+  ],
+  "expected_accepted": [],
+  "note": "Insurance starts after shipment."
+}

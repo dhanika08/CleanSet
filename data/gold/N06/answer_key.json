@@ -1,0 +1,13 @@
+{
+  "case_id": "N06",
+  "group": "near_miss",
+  "expected_verdict": "compliant",
+  "expected_findings": [],
+  "expected_accepted": [
+    {
+      "rule_id": "CHK-20",
+      "note": "Documents use different date formats (for example 'November 08, 2026' and '08/11/2026'). The dates are the same; formatting is not a discrepancy."
+    }
+  ],
+  "note": "Different date formats on different documents."
+}

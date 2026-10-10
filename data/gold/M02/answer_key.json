@@ -1,0 +1,26 @@
+{
+  "case_id": "M02",
+  "group": "multi_error",
+  "expected_verdict": "discrepant",
+  "expected_findings": [
+    {
+      "rule_id": "CHK-02",
+      "field": "bill_of_lading.shipped_on_board_date",
+      "related_fields": [
+        "lc.44C_latest_shipment_date"
+      ],
+      "description": "Goods were shipped on 18 Nov 2026, after the latest shipment date of 15 Nov 2026."
+    },
+    {
+      "rule_id": "CHK-03",
+      "field": "presentation.presentation_date",
+      "related_fields": [
+        "bill_of_lading.shipped_on_board_date",
+        "lc.48_presentation_period_days"
+      ],
+      "description": "Documents were presented 22 days after shipment; the credit allows 21 days."
+    }
+  ],
+  "expected_accepted": [],
+  "note": "Combination of 2 problems."
+}

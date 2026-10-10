@@ -1,0 +1,8 @@
+{
+  "case_id": "C01",
+  "group": "clean",
+  "expected_verdict": "compliant",
+  "expected_findings": [],
+  "expected_accepted": [],
+  "note": "The base deal, fully compliant."
+}

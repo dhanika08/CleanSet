@@ -1,0 +1,13 @@
+{
+  "case_id": "N01",
+  "group": "near_miss",
+  "expected_verdict": "compliant",
+  "expected_findings": [],
+  "expected_accepted": [
+    {
+      "rule_id": "CHK-18",
+      "note": "Bill of lading describes the goods generally as 'cotton garments'. This does not conflict with the invoice or credit (UCP 600 Art. 14(e))."
+    }
+  ],
+  "note": "'Cotton garments' on the bill of lading."
+}

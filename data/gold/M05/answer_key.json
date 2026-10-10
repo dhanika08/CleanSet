@@ -1,0 +1,33 @@
+{
+  "case_id": "M05",
+  "group": "multi_error",
+  "expected_verdict": "discrepant",
+  "expected_findings": [
+    {
+      "rule_id": "CHK-04",
+      "field": "invoice.total_amount",
+      "related_fields": [
+        "lc.32B_currency_amount"
+      ],
+      "description": "Invoice total USD 53,000.00 exceeds the credit amount of USD 50,000.00 (unit price 10.60 instead of 10.00)."
+    },
+    {
+      "rule_id": "CHK-05",
+      "field": "invoice.goods_description",
+      "related_fields": [
+        "lc.45A_goods_description"
+      ],
+      "description": "Invoice states USD 10.60 per piece, but the credit describes the goods at USD 10.00 per piece."
+    },
+    {
+      "rule_id": "CHK-08",
+      "field": "bill_of_lading.port_of_loading",
+      "related_fields": [
+        "lc.44E_port_of_loading"
+      ],
+      "description": "Bill of lading shows port of loading Chennai, but the credit requires Tuticorin."
+    }
+  ],
+  "expected_accepted": [],
+  "note": "Combination of 2 problems."
+}

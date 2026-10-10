@@ -1,0 +1,13 @@
+{
+  "case_id": "N05",
+  "group": "near_miss",
+  "expected_verdict": "compliant",
+  "expected_findings": [],
+  "expected_accepted": [
+    {
+      "rule_id": "CHK-02",
+      "note": "Goods shipped on 2 Nov 2026, well before the latest shipment date of 15 Nov. Early shipment is not a discrepancy."
+    }
+  ],
+  "note": "Shipped early."
+}

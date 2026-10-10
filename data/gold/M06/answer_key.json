@@ -1,0 +1,26 @@
+{
+  "case_id": "M06",
+  "group": "multi_error",
+  "expected_verdict": "discrepant",
+  "expected_findings": [
+    {
+      "rule_id": "CHK-11",
+      "field": "insurance.insured_amount",
+      "related_fields": [
+        "insurance.cif_invoice_value",
+        "lc.46A_documents_required"
+      ],
+      "description": "Insurance covers 100% of the CIF value; the credit requires at least 110%."
+    },
+    {
+      "rule_id": "CHK-12",
+      "field": "insurance.effective_from",
+      "related_fields": [
+        "bill_of_lading.shipped_on_board_date"
+      ],
+      "description": "Insurance cover starts after the goods were shipped."
+    }
+  ],
+  "expected_accepted": [],
+  "note": "Combination of 2 problems."
+}

@@ -1,0 +1,17 @@
+{
+  "case_id": "E09",
+  "group": "single_error",
+  "expected_verdict": "discrepant",
+  "expected_findings": [
+    {
+      "rule_id": "CHK-06",
+      "field": "invoice.made_out_to",
+      "related_fields": [
+        "lc.50_applicant"
+      ],
+      "description": "Invoice is made out to Nordic Trading GmbH, but the applicant in the credit is Nordic Textiles GmbH."
+    }
+  ],
+  "expected_accepted": [],
+  "note": "Invoice made out to the wrong company."
+}

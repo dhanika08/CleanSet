@@ -1,0 +1,210 @@
+{
+  "_meta": {
+    "description": "CleanSet master truth file. One fully COMPLIANT export deal. All documents are generated from this file. ALL DATA IS FICTIONAL.",
+    "version": "1.0",
+    "deal_id": "C04"
+  },
+  "lc": {
+    "27_sequence_of_total": "1/1",
+    "40A_form_of_credit": "IRREVOCABLE",
+    "20_documentary_credit_number": "LC-BAO-2026-0211",
+    "31C_date_of_issue": "2026-09-15",
+    "40E_applicable_rules": "UCP LATEST VERSION",
+    "31D_expiry": {
+      "date": "2026-12-20",
+      "place": "TIRUPPUR, INDIA"
+    },
+    "50_applicant": {
+      "name": "Baltic Apparel Oy",
+      "address": "Satamakatu 9, 00160 Helsinki, Finland"
+    },
+    "59_beneficiary": {
+      "name": "Tiruppur Knitwear Pvt Ltd",
+      "address": "45 Kangeyam Road, Tiruppur 641604, Tamil Nadu, India"
+    },
+    "issuing_bank": {
+      "name": "Nordlund Pankki Oyj",
+      "address": "Aleksanterinkatu 30, 00100 Helsinki, Finland"
+    },
+    "advising_bank": {
+      "name": "Southern Indian Bank Ltd",
+      "address": "Trade Finance Branch, Avinashi Road, Tiruppur, India"
+    },
+    "32B_currency_amount": {
+      "currency": "USD",
+      "amount": 67500.0
+    },
+    "39A_tolerance": {
+      "plus_percent": 0,
+      "minus_percent": 0,
+      "note": "No tolerance stated. Amount and quantity must not exceed the credit."
+    },
+    "41D_available_with": "ANY BANK BY NEGOTIATION",
+    "43P_partial_shipments": "NOT ALLOWED",
+    "43T_transhipment": "NOT ALLOWED",
+    "44E_port_of_loading": "CHENNAI, INDIA",
+    "44F_port_of_discharge": "HELSINKI, FINLAND",
+    "44C_latest_shipment_date": "2026-11-20",
+    "45A_goods_description": "6,000 PCS MEN'S 100% COTTON POLO SHIRTS, STYLE NO. NTX-P210, AS PER PROFORMA INVOICE NO. PI-2026-118, USD 11.25 PER PIECE CIF HELSINKI INCOTERMS 2020",
+    "46A_documents_required": [
+      "SIGNED COMMERCIAL INVOICE IN 3 ORIGINALS, MADE OUT TO APPLICANT.",
+      "PACKING LIST IN 3 COPIES.",
+      "FULL SET (3/3) OF CLEAN ON BOARD OCEAN BILLS OF LADING MADE OUT TO ORDER OF ISSUING BANK, MARKED FREIGHT PREPAID, NOTIFY APPLICANT.",
+      "INSURANCE CERTIFICATE FOR 110 PERCENT OF CIF INVOICE VALUE COVERING INSTITUTE CARGO CLAUSES (A), CLAIMS PAYABLE IN HELSINKI IN USD.",
+      "CERTIFICATE OF ORIGIN ISSUED BY A CHAMBER OF COMMERCE, SHOWING INDIA AS COUNTRY OF ORIGIN."
+    ],
+    "47A_additional_conditions": [
+      "ALL DOCUMENTS MUST QUOTE THE DOCUMENTARY CREDIT NUMBER.",
+      "THIRD PARTY DOCUMENTS ARE ACCEPTABLE EXCEPT THE INVOICE.",
+      "ALL BANK CHARGES OUTSIDE THE ISSUING BANK ARE FOR THE ACCOUNT OF THE BENEFICIARY."
+    ],
+    "48_presentation_period_days": 21,
+    "49_confirmation": "WITHOUT",
+    "incoterm": "CIF"
+  },
+  "invoice": {
+    "invoice_number": "TKW/EXP/2026/0187",
+    "invoice_date": "2026-11-10",
+    "lc_number": "LC-BAO-2026-0211",
+    "issued_by": {
+      "name": "Tiruppur Knitwear Pvt Ltd",
+      "address": "45 Kangeyam Road, Tiruppur 641604, Tamil Nadu, India"
+    },
+    "made_out_to": {
+      "name": "Baltic Apparel Oy",
+      "address": "Satamakatu 9, 00160 Helsinki, Finland"
+    },
+    "shipment_from": "CHENNAI, INDIA",
+    "shipment_to": "HELSINKI, FINLAND",
+    "incoterm": "CIF HELSINKI",
+    "goods_description": "6,000 PCS MEN'S 100% COTTON POLO SHIRTS, STYLE NO. NTX-P210, AS PER PROFORMA INVOICE NO. PI-2026-118, USD 11.25 PER PIECE CIF HELSINKI INCOTERMS 2020",
+    "hs_code": "6105.10",
+    "quantity": 6000,
+    "unit": "PCS",
+    "unit_price": 11.25,
+    "currency": "USD",
+    "total_amount": 67500.0,
+    "signed": true,
+    "number_of_originals": 3
+  },
+  "packing_list": {
+    "packing_list_number": "TKW/PL/2026/0187",
+    "packing_list_date": "2026-11-10",
+    "lc_number": "LC-BAO-2026-0211",
+    "issued_by": {
+      "name": "Tiruppur Knitwear Pvt Ltd",
+      "address": "45 Kangeyam Road, Tiruppur 641604, Tamil Nadu, India"
+    },
+    "consignee": {
+      "name": "Baltic Apparel Oy",
+      "address": "Satamakatu 9, 00160 Helsinki, Finland"
+    },
+    "shipping_marks": "NTX / HELSINKI / CTN 1-120 / LC-BAO-2026-0211",
+    "goods_description": "6,000 PCS MEN'S 100% COTTON POLO SHIRTS, STYLE NO. NTX-P210",
+    "size_breakdown": [
+      {
+        "size": "S",
+        "pieces": 900,
+        "cartons": 18
+      },
+      {
+        "size": "M",
+        "pieces": 1800,
+        "cartons": 36
+      },
+      {
+        "size": "L",
+        "pieces": 2100,
+        "cartons": 42
+      },
+      {
+        "size": "XL",
+        "pieces": 1200,
+        "cartons": 24
+      }
+    ],
+    "total_pieces": 6000,
+    "pieces_per_carton": 50,
+    "total_cartons": 120,
+    "carton_size_cm": "60 x 40 x 30",
+    "net_weight_kg": 1320.0,
+    "gross_weight_kg": 1416.0,
+    "volume_cbm": 8.64
+  },
+  "bill_of_lading": {
+    "bl_number": "COL-TUT-HAM-26-0412",
+    "lc_number": "LC-BAO-2026-0211",
+    "carrier": "Coromandel Ocean Lines",
+    "vessel": "MV COROMANDEL STAR",
+    "voyage": "026E",
+    "shipper": {
+      "name": "Tiruppur Knitwear Pvt Ltd",
+      "address": "45 Kangeyam Road, Tiruppur 641604, Tamil Nadu, India"
+    },
+    "consignee": "TO ORDER OF NORDLUND PANKKI OYJ",
+    "notify_party": {
+      "name": "Baltic Apparel Oy",
+      "address": "Satamakatu 9, 00160 Helsinki, Finland"
+    },
+    "place_of_receipt": "CHENNAI, INDIA",
+    "port_of_loading": "CHENNAI, INDIA",
+    "port_of_discharge": "HELSINKI, FINLAND",
+    "container_number": "FCLU 5551234",
+    "seal_number": "SL-884213",
+    "marks_and_numbers": "NTX / HELSINKI / CTN 1-120 / LC-BAO-2026-0211",
+    "number_of_packages": 120,
+    "package_type": "CARTONS",
+    "goods_description": "6,000 PCS MEN'S 100% COTTON POLO SHIRTS, STYLE NO. NTX-P210",
+    "gross_weight_kg": 1416.0,
+    "measurement_cbm": 8.64,
+    "freight": "FREIGHT PREPAID",
+    "clean_on_board": true,
+    "remarks": "CLEAN ON BOARD",
+    "shipped_on_board_date": "2026-11-12",
+    "date_of_issue": "2026-11-12",
+    "place_of_issue": "CHENNAI",
+    "number_of_originals": 3
+  },
+  "insurance": {
+    "certificate_number": "BMA/MC/2026/77124",
+    "lc_number": "LC-BAO-2026-0211",
+    "insurer": "Bharat Marine Assurance Co Ltd",
+    "date_of_issue": "2026-11-11",
+    "effective_from": "2026-11-11",
+    "insured": "Baltic Apparel Oy",
+    "cover_clauses": "INSTITUTE CARGO CLAUSES (A)",
+    "from": "CHENNAI, INDIA",
+    "to": "HELSINKI, FINLAND",
+    "vessel": "MV COROMANDEL STAR",
+    "goods_description": "6,000 PCS MEN'S 100% COTTON POLO SHIRTS",
+    "cif_invoice_value": 67500.0,
+    "insured_amount": 74250.0,
+    "insured_percentage": 110,
+    "currency": "USD",
+    "claims_payable_at": "HELSINKI, FINLAND",
+    "claims_payable_in": "USD"
+  },
+  "certificate_of_origin": {
+    "certificate_number": "TEC/CO/2026/3391",
+    "lc_number": "LC-BAO-2026-0211",
+    "date_of_issue": "2026-11-09",
+    "issued_by": "Tiruppur Exporters Chamber of Commerce",
+    "exporter": {
+      "name": "Tiruppur Knitwear Pvt Ltd",
+      "address": "45 Kangeyam Road, Tiruppur 641604, Tamil Nadu, India"
+    },
+    "consignee": {
+      "name": "Baltic Apparel Oy",
+      "address": "Satamakatu 9, 00160 Helsinki, Finland"
+    },
+    "country_of_origin": "INDIA",
+    "goods_description": "6,000 PCS MEN'S 100% COTTON POLO SHIRTS",
+    "port_of_loading": "CHENNAI, INDIA",
+    "port_of_discharge": "HELSINKI, FINLAND",
+    "declaration": "The undersigned hereby declares that the above goods were produced in India."
+  },
+  "presentation": {
+    "presentation_date": "2026-11-22",
+    "presented_to": "Southern Indian Bank Ltd"
+  }
+}

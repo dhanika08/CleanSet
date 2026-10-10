@@ -1,0 +1,17 @@
+{
+  "case_id": "N02",
+  "group": "near_miss",
+  "expected_verdict": "compliant",
+  "expected_findings": [],
+  "expected_accepted": [
+    {
+      "rule_id": "CHK-04",
+      "note": "Invoice total USD 48,000 is below the credit amount. Under the amount is acceptable."
+    },
+    {
+      "rule_id": "CHK-05",
+      "note": "Credit says 'ABOUT 5,000 PCS'. Shipping 4,800 (4% under) is within the 10% allowed for 'about' (UCP 600 Art. 30(a))."
+    }
+  ],
+  "note": "'About' quantity, shipped 4% under."
+}

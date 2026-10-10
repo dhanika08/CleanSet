@@ -1,0 +1,8 @@
+{
+  "case_id": "C05",
+  "group": "clean",
+  "expected_verdict": "compliant",
+  "expected_findings": [],
+  "expected_accepted": [],
+  "note": "Boundary: shipped on the latest allowed day and presented on day 21. Still compliant."
+}

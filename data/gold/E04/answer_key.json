@@ -1,0 +1,17 @@
+{
+  "case_id": "E04",
+  "group": "single_error",
+  "expected_verdict": "discrepant",
+  "expected_findings": [
+    {
+      "rule_id": "CHK-09",
+      "field": "bill_of_lading.port_of_discharge",
+      "related_fields": [
+        "lc.44F_port_of_discharge"
+      ],
+      "description": "Bill of lading shows port of discharge Rotterdam, but the credit requires Hamburg."
+    }
+  ],
+  "expected_accepted": [],
+  "note": "Wrong port of discharge on the bill of lading."
+}

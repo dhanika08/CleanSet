@@ -1,0 +1,33 @@
+{
+  "case_id": "M04",
+  "group": "multi_error",
+  "expected_verdict": "discrepant",
+  "expected_findings": [
+    {
+      "rule_id": "CHK-09",
+      "field": "bill_of_lading.port_of_discharge",
+      "related_fields": [
+        "lc.44F_port_of_discharge"
+      ],
+      "description": "Bill of lading shows port of discharge Rotterdam, but the credit requires Hamburg."
+    },
+    {
+      "rule_id": "CHK-12",
+      "field": "insurance.effective_from",
+      "related_fields": [
+        "bill_of_lading.shipped_on_board_date"
+      ],
+      "description": "Insurance cover starts after the goods were shipped."
+    },
+    {
+      "rule_id": "CHK-14",
+      "field": "bill_of_lading.gross_weight_kg",
+      "related_fields": [
+        "packing_list.gross_weight_kg"
+      ],
+      "description": "Gross weight conflicts: packing list 1,180.0 kg, bill of lading 1,108.0 kg."
+    }
+  ],
+  "expected_accepted": [],
+  "note": "Combination of 3 problems."
+}

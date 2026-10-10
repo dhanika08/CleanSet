@@ -1,0 +1,17 @@
+{
+  "case_id": "E01",
+  "group": "single_error",
+  "expected_verdict": "discrepant",
+  "expected_findings": [
+    {
+      "rule_id": "CHK-02",
+      "field": "bill_of_lading.shipped_on_board_date",
+      "related_fields": [
+        "lc.44C_latest_shipment_date"
+      ],
+      "description": "Goods were shipped on 18 Nov 2026, after the latest shipment date of 15 Nov 2026."
+    }
+  ],
+  "expected_accepted": [],
+  "note": "Shipped after the latest shipment date."
+}

@@ -1,0 +1,18 @@
+{
+  "case_id": "E05",
+  "group": "single_error",
+  "expected_verdict": "discrepant",
+  "expected_findings": [
+    {
+      "rule_id": "CHK-03",
+      "field": "presentation.presentation_date",
+      "related_fields": [
+        "bill_of_lading.shipped_on_board_date",
+        "lc.48_presentation_period_days"
+      ],
+      "description": "Documents were presented 22 days after shipment; the credit allows 21 days."
+    }
+  ],
+  "expected_accepted": [],
+  "note": "Presented 22 days after shipment."
+}

@@ -1,0 +1,13 @@
+{
+  "case_id": "N04",
+  "group": "near_miss",
+  "expected_verdict": "compliant",
+  "expected_findings": [],
+  "expected_accepted": [
+    {
+      "rule_id": "CHK-20",
+      "note": "Packing list abbreviates 'Speicherstrasse' to 'Speicherstr.'. Address detail need not be identical (UCP 600 Art. 14(j))."
+    }
+  ],
+  "note": "Abbreviated street name."
+}

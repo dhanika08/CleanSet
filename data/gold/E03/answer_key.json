@@ -1,0 +1,17 @@
+{
+  "case_id": "E03",
+  "group": "single_error",
+  "expected_verdict": "discrepant",
+  "expected_findings": [
+    {
+      "rule_id": "CHK-08",
+      "field": "bill_of_lading.port_of_loading",
+      "related_fields": [
+        "lc.44E_port_of_loading"
+      ],
+      "description": "Bill of lading shows port of loading Chennai, but the credit requires Tuticorin."
+    }
+  ],
+  "expected_accepted": [],
+  "note": "Wrong port of loading on the bill of lading."
+}

@@ -1,0 +1,52 @@
+{
+  "case_id": "DEMO",
+  "group": "demo",
+  "expected_verdict": "discrepant",
+  "expected_findings": [
+    {
+      "rule_id": "CHK-08",
+      "field": "bill_of_lading.port_of_loading",
+      "related_fields": [
+        "lc.44E_port_of_loading"
+      ],
+      "description": "Bill of lading shows port of loading Chennai, but the credit requires Tuticorin."
+    },
+    {
+      "rule_id": "CHK-03",
+      "field": "presentation.presentation_date",
+      "related_fields": [
+        "bill_of_lading.shipped_on_board_date",
+        "lc.48_presentation_period_days"
+      ],
+      "description": "Documents were presented 24 days after shipment; the credit allows 21 days."
+    },
+    {
+      "rule_id": "CHK-11",
+      "field": "insurance.insured_amount",
+      "related_fields": [
+        "insurance.cif_invoice_value",
+        "lc.46A_documents_required"
+      ],
+      "description": "Insurance covers 100% of the CIF value; the credit requires at least 110%."
+    },
+    {
+      "rule_id": "CHK-14",
+      "field": "bill_of_lading.gross_weight_kg",
+      "related_fields": [
+        "packing_list.gross_weight_kg"
+      ],
+      "description": "Gross weight conflicts: packing list 1,180.0 kg, bill of lading 1,108.0 kg."
+    }
+  ],
+  "expected_accepted": [
+    {
+      "rule_id": "CHK-18",
+      "note": "Bill of lading describes the goods generally as 'cotton garments'. This does not conflict with the invoice or credit (UCP 600 Art. 14(e))."
+    },
+    {
+      "rule_id": "CHK-20",
+      "note": "Packing list abbreviates 'Speicherstrasse' to 'Speicherstr.'. Address detail need not be identical (UCP 600 Art. 14(j))."
+    }
+  ],
+  "note": "The deal shown to judges."
+}

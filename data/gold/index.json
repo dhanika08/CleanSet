@@ -1,0 +1,261 @@
+[
+  {
+    "case_id": "C01",
+    "group": "clean",
+    "expected_verdict": "compliant",
+    "expected_rule_ids": [],
+    "note": "The base deal, fully compliant."
+  },
+  {
+    "case_id": "C02",
+    "group": "clean",
+    "expected_verdict": "compliant",
+    "expected_rule_ids": [],
+    "note": "Larger order, different price and destination."
+  },
+  {
+    "case_id": "C03",
+    "group": "clean",
+    "expected_verdict": "compliant",
+    "expected_rule_ids": [],
+    "note": "Different goods."
+  },
+  {
+    "case_id": "C04",
+    "group": "clean",
+    "expected_verdict": "compliant",
+    "expected_rule_ids": [],
+    "note": "Different buyer, bank and ports."
+  },
+  {
+    "case_id": "C05",
+    "group": "clean",
+    "expected_verdict": "compliant",
+    "expected_rule_ids": [],
+    "note": "Boundary: shipped on the latest allowed day and presented on day 21. Still compliant."
+  },
+  {
+    "case_id": "C06",
+    "group": "clean",
+    "expected_verdict": "compliant",
+    "expected_rule_ids": [],
+    "note": "Insurance at 120%, above the 110% minimum."
+  },
+  {
+    "case_id": "E01",
+    "group": "single_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-02"
+    ],
+    "note": "Shipped after the latest shipment date."
+  },
+  {
+    "case_id": "E02",
+    "group": "single_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-04",
+      "CHK-05"
+    ],
+    "note": "Invoice price too high, so the total exceeds the credit."
+  },
+  {
+    "case_id": "E03",
+    "group": "single_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-08"
+    ],
+    "note": "Wrong port of loading on the bill of lading."
+  },
+  {
+    "case_id": "E04",
+    "group": "single_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-09"
+    ],
+    "note": "Wrong port of discharge on the bill of lading."
+  },
+  {
+    "case_id": "E05",
+    "group": "single_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-03"
+    ],
+    "note": "Presented 22 days after shipment."
+  },
+  {
+    "case_id": "E06",
+    "group": "single_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-11"
+    ],
+    "note": "Insurance at 100% instead of 110%."
+  },
+  {
+    "case_id": "E07",
+    "group": "single_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-12"
+    ],
+    "note": "Insurance starts after shipment."
+  },
+  {
+    "case_id": "E08",
+    "group": "single_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-14"
+    ],
+    "note": "Gross weight differs between packing list and bill of lading."
+  },
+  {
+    "case_id": "E09",
+    "group": "single_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-06"
+    ],
+    "note": "Invoice made out to the wrong company."
+  },
+  {
+    "case_id": "E10",
+    "group": "single_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-01"
+    ],
+    "note": "Credit had expired at presentation."
+  },
+  {
+    "case_id": "M01",
+    "group": "multi_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-08",
+      "CHK-11"
+    ],
+    "note": "Combination of 2 problems."
+  },
+  {
+    "case_id": "M02",
+    "group": "multi_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-02",
+      "CHK-03"
+    ],
+    "note": "Combination of 2 problems."
+  },
+  {
+    "case_id": "M03",
+    "group": "multi_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-06",
+      "CHK-14"
+    ],
+    "note": "Combination of 2 problems."
+  },
+  {
+    "case_id": "M04",
+    "group": "multi_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-09",
+      "CHK-12",
+      "CHK-14"
+    ],
+    "note": "Combination of 3 problems."
+  },
+  {
+    "case_id": "M05",
+    "group": "multi_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-04",
+      "CHK-05",
+      "CHK-08"
+    ],
+    "note": "Combination of 2 problems."
+  },
+  {
+    "case_id": "M06",
+    "group": "multi_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-11",
+      "CHK-12"
+    ],
+    "note": "Combination of 2 problems."
+  },
+  {
+    "case_id": "M07",
+    "group": "multi_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-02",
+      "CHK-06",
+      "CHK-11"
+    ],
+    "note": "Combination of 3 problems."
+  },
+  {
+    "case_id": "M08",
+    "group": "multi_error",
+    "expected_verdict": "discrepant",
+    "expected_rule_ids": [
+      "CHK-03",
+      "CHK-08",
+      "CHK-09"
+    ],
+    "note": "Combination of 3 problems."
+  },
+  {
+    "case_id": "N01",
+    "group": "near_miss",
+    "expected_verdict": "compliant",
+    "expected_rule_ids": [],
+    "note": "'Cotton garments' on the bill of lading."
+  },
+  {
+    "case_id": "N02",
+    "group": "near_miss",
+    "expected_verdict": "compliant",
+    "expected_rule_ids": [],
+    "note": "'About' quantity, shipped 4% under."
+  },
+  {
+    "case_id": "N03",
+    "group": "near_miss",
+    "expected_verdict": "compliant",
+    "expected_rule_ids": [],
+    "note": "Insurance at 112%."
+  },
+  {
+    "case_id": "N04",
+    "group": "near_miss",
+    "expected_verdict": "compliant",
+    "expected_rule_ids": [],
+    "note": "Abbreviated street name."
+  },
+  {
+    "case_id": "N05",
+    "group": "near_miss",
+    "expected_verdict": "compliant",
+    "expected_rule_ids": [],
+    "note": "Shipped early."
+  },
+  {
+    "case_id": "N06",
+    "group": "near_miss",
+    "expected_verdict": "compliant",
+    "expected_rule_ids": [],
+    "note": "Different date formats on different documents."
+  }
+]
