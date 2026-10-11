@@ -1,0 +1,12 @@
+# Files that do NOT need to be uploaded when deploying
+.git
+.gitignore
+venv/
+__pycache__/
+data/gold/
+data/truth/
+data/demo/clean/
+tests/
+scripts/
+eval/
+*.md

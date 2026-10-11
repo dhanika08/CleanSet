@@ -23,6 +23,7 @@ import os
 import shutil
 import subprocess
 import sys
+import tempfile
 from datetime import date
 
 from jinja2 import Environment
@@ -290,16 +291,26 @@ def find_chrome():
     return None
 
 
-def html_to_pdf(chrome, html_path):
+def html_to_pdf(chrome, html_path, retries=1, timeout=90):
+    """Turn one HTML page into a PDF using Chrome.
+    Each attempt uses its own temporary Chrome profile, so it cannot clash with the Chrome
+    window you have open (that clash is what makes headless Chrome hang). Retries once on failure."""
     pdf_path = html_path[:-5] + ".pdf"
-    cmd = [chrome, "--headless=new", "--disable-gpu", "--no-pdf-header-footer",
-           "--print-to-pdf=" + pdf_path, "file://" + os.path.abspath(html_path)]
-    try:
-        subprocess.run(cmd, check=True, capture_output=True, timeout=60)
-        return True
-    except Exception as e:                       # PDFs are nice-to-have, never crash
-        print("  warning: PDF failed for", os.path.basename(html_path), "-", e)
-        return False
+    for attempt in range(retries + 1):
+        profile = tempfile.mkdtemp(prefix="cleanset-chrome-")
+        cmd = [chrome, "--headless=new", "--disable-gpu", "--no-first-run", "--no-default-browser-check",
+               "--user-data-dir=" + profile, "--no-pdf-header-footer",
+               "--print-to-pdf=" + pdf_path, "file://" + os.path.abspath(html_path)]
+        try:
+            subprocess.run(cmd, check=True, capture_output=True, timeout=timeout)
+            if os.path.exists(pdf_path) and os.path.getsize(pdf_path) > 0:
+                return True
+        except Exception as e:
+            if attempt == retries:
+                print("  warning: PDF failed for", html_path, "-", type(e).__name__)
+        finally:
+            shutil.rmtree(profile, ignore_errors=True)
+    return False
 
 
 def render_case(truth, out_dir, make_pdf=True):
